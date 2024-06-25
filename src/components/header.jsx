@@ -1,3 +1,6 @@
+import style from './header.css'
+import styles from './header.module.css'
+
 const moment = require('moment');
 
 export function Header(){
@@ -8,13 +11,15 @@ export function Header(){
     }
 
     return(
-        <div className="justify-content-center">
+        <div component="header">
             <h2 className="mt-4 text-primary border border-primary rounded d-inline-block p-3">Hello this is React Styling</h2>
             <br />
-            <button type="button" onClick={clickMe} className="btn btn-primary text-align-center" style={{display: 'block',  textAlign:"center"}}>
-                Click Me to Check Date & Time
-            </button>
-            <h3 id="dateTime"></h3>
+            <div className="d-flex justify-content-center button">
+                <button type="button" onClick={clickMe} className="btn btn-primary text-align-center" style={{display: 'block',  textAlign:"center"}}>
+                    Click Me to Check Date & Time
+                </button>
+            </div>
+            <h3 id="dateTime" className={styles.result}></h3>
         </div>
     );
 }

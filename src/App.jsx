@@ -36,7 +36,7 @@ function App() {
         <CarInfo empLoyeeList = {empLoyeeList}/>
         <ul>
             { noList.map((noList, i) => {
-                return(<li key={i}><p>{noList}</p></li>)
+                return(<li key={i}>{noList}</li>)
               }) 
             }
         </ul>

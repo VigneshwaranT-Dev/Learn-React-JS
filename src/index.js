@@ -4,17 +4,19 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Header } from './components/index';
-import {State, Student, StateList} from './components/index'
+import {State, Student, StateList, Form, StudentForm} from './components/index'
 import 'bootstrap/dist/css/bootstrap.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Header/>
+    {/* <Header/> */}
     {/* <State/> */}
     {/* <Student/> */}
     {/* <StateList/> */}
+    {/* <Form/> */}
+    <StudentForm/>
   </React.StrictMode>
 );
 

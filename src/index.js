@@ -4,7 +4,7 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Header } from './components/index';
-import {State, Student, StateList, Form, StudentForm} from './components/index'
+import {State, Student, StateList, Form, StudentForm, GuessNumber} from './components/index'
 import 'bootstrap/dist/css/bootstrap.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,7 +16,8 @@ root.render(
     {/* <Student/> */}
     {/* <StateList/> */}
     {/* <Form/> */}
-    <StudentForm/>
+    {/* <StudentForm/> */}
+    <GuessNumber/>
   </React.StrictMode>
 );
 
